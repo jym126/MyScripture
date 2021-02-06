@@ -66,7 +66,18 @@
         android:layout_marginStart="124dp"
         android:layout_marginTop="76dp"
         android:onClick="Escritura"
-        android:text="@string/save"
+        android:text="@string/send"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/verse" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="28dp"
+        android:onClick="Loading"
+        android:text="@string/load_scripture"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
 </androidx.constraintlayout.widget.ConstraintLayout>

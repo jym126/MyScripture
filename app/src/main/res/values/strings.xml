@@ -9,4 +9,7 @@
     <string name="screen">Screen</string>
     <string name="pantalla">TextView</string>
     <string name="Return">Return</string>
+    <string name="save_scripture">Save Scripture</string>
+    <string name="send">Send</string>
+    <string name="load_scripture">Load Scripture</string>
 </resources>

@@ -3,6 +3,7 @@ package com.martinez;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.nfc.Tag;
 import android.os.Bundle;
 import android.util.Log;
@@ -31,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         buton = findViewById(R.id.button);
 
     }
-    //Method for the button save
+    //Method for the button Send
     public void Escritura(View view){
         //Creating variables to store the editText components data
         String bookData = book.getText().toString();
@@ -50,7 +51,23 @@ public class MainActivity extends AppCompatActivity {
         intent.putExtra("verseData", verseData);
 
         startActivity(intent);
+    }
+
+    public void Loading(View view){
+        // Retrieving the value using its keys the file name
+        // must be same in both saving and retrieving the data
+        SharedPreferences sh = getSharedPreferences("MySharedPref", MODE_PRIVATE);
+
+        // The value will be default as empty string because for
+        // the very first time when the app is opened, there is nothing to show
+        String bookData = sh.getString("bookData1", "");
+        String chapterData = sh.getString("chapterData1", "");
+        String verseData = sh.getString("verseData1", "");
 
 
+        // We can then use the data
+        book.setText(bookData);
+        chapter.setText(chapterData);
+        verse.setText(verseData);
     }
 }
