@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">My Scripture</string>
+    <string name="ask">ask</string>
+    <string name="enter_your_favorite_scripture">Enter your favorite scripture</string>
+    <string name="book">Book</string>
+    <string name="chapter">Chapter</string>
+    <string name="verse">Verse</string>
+    <string name="save">Save</string>
+    <string name="screen">Screen</string>
+    <string name="pantalla">TextView</string>
+    <string name="Return">Return</string>
+</resources>
